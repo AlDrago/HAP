@@ -1,5 +1,5 @@
 import Foundation
-import class HTTP.Connection
+import class SimpleHTTP.Connection
 
 protocol AnyCharacteristic: class, JSONSerializable {
     var iid: Int { get set }

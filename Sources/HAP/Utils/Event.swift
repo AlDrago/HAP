@@ -1,4 +1,4 @@
-import HTTP
+import SimpleHTTP
 import Foundation
 
 struct Event {

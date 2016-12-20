@@ -1,14 +1,14 @@
 import Foundation
-import HTTP
+import SimpleHTTP
 import func Evergreen.getLogger
 
 fileprivate let logger = getLogger("hap")
 
 
 class Delegate: NSObject, NetServiceDelegate {
-    var server: HTTP.Server
+    var server: SimpleHTTP.Server
 
-    init(server: HTTP.Server) {
+    init(server: SimpleHTTP.Server) {
         self.server = server
     }
 
@@ -31,7 +31,7 @@ public class Server {
 
         let encryption = EncryptionMiddleware()
 
-        let httpServer = HTTP.Server(application: application, streamMiddleware: [encryption])
+        let httpServer = SimpleHTTP.Server(application: application, streamMiddleware: [encryption])
 
         delegate = Delegate(server: httpServer)
 

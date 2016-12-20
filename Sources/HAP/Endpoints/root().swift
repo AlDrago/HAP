@@ -1,4 +1,4 @@
-import HTTP
+import SimpleHTTP
 
 func root(device: Device) -> Application {
     return Router(routes: [

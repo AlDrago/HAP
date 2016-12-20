@@ -1,5 +1,5 @@
 import Foundation
-import HTTP
+import SimpleHTTP
 import func Evergreen.getLogger
 import HAP
 

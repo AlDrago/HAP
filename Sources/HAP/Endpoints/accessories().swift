@@ -1,5 +1,5 @@
 import Foundation
-import HTTP
+import SimpleHTTP
 import HKDF
 
 func accessories(device: Device) -> Application {

@@ -1,6 +1,6 @@
 import Foundation
 import CommonCrypto
-import HTTP
+import SimpleHTTP
 
 public enum AccessoryType: String {
     case other = "1"
